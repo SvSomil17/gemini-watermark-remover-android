@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingBottom="40dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?android:windowBackground"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?android:windowBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="8dp"
+                    android:text="@string/compare_preview"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_indicator"
+                    app:drawableTint="@color/info" />
+
+                <TextView
+                    android:id="@+id/originalInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?android:textColorSecondary"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/processedInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/primary"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#CCCCCC">
+
+                <com.gemini.watermark.remover.view.ComparisonSliderView
+                    android:id="@+id/comparisonSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_margin="16dp"
+                    android:background="#80000000"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/processed"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="16dp"
+                    android:background="#80000000"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:text="@string/original"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/copyBtn"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="@string/copy"
+            android:visibility="gone"
+            app:icon="@drawable/ic_copy"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/downloadBtn"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="@string/download"
+            android:visibility="gone"
+            app:icon="@drawable/ic_download"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resetBtn"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="@string/reset"
+            app:icon="@drawable/ic_reset"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="20dp"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="12sp" />
+</LinearLayout>

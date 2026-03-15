@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="32dp"
+    android:background="?colorSurface">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/features_title"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="3"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?android:windowBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_speed"
+                    android:background="@drawable/bg_icon_light"
+                    android:padding="12dp"
+                    app:tint="@color/primary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speed_title"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speed_desc"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?android:windowBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_privacy"
+                    android:background="@drawable/bg_icon_light"
+                    android:padding="12dp"
+                    app:tint="@color/primary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/privacy_title"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/privacy_desc"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?android:windowBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_free"
+                    android:background="@drawable/bg_icon_light"
+                    android:padding="12dp"
+                    app:tint="@color/primary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pricing_title"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pricing_desc"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>

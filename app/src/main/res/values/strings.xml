@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Gemini watermark remover</string>
+    <string name="copyright">Gemini Watermark Remover. All rights reserved.</string>
+    <string name="how_it_works">How It Works</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="footer_desc">Gemini Watermark Remover, for educational purposes only</string>
+    <string name="gemini">Gemini</string>
+    <string name="watermark_remover">Watermark Remover</string>
+    <string name="english">English</string>
+    <string name="title">Gemini AI Image Watermark Removal</string>
+    <string name="subtitle">Reverse alpha blending algorithm, fully browser-based local processing – free, fast, lossless</string>
+    <string name="upload_text">Click to select images</string>
+    <string name="upload_hint">Supports JPG, PNG, WebP</string>
+    <string name="_1">1</string>
+    <string name="step1">Select original image</string>
+    <string name="loading">Processing…</string>
+    <string name="features_title">Features</string>
+    <string name="speed_title">Lightning Fast</string>
+    <string name="speed_desc">Based on modern tech, millisecond response – no queue</string>
+    <string name="progress_default">Processing: 0/0</string>
+    <string name="download_all">Download all</string>
+    <string name="compare_preview">Compare preview</string>
+    <string name="processed">Processed</string>
+    <string name="original">Original</string>
+    <string name="copy">Copy result</string>
+    <string name="download">Download result</string>
+    <string name="reset">Reset / Change image</string>
+
+    <string name="terms_html">
+    <![CDATA[
+    <h3>Terms of Use</h3>
+    <p>Last updated: December 19, 2025</p>
+    <p><b>Important Disclaimer</b></p>
+    <p>This tool is provided for personal and educational use.</p>
+    <p><b>A few things to keep in mind</b></p>
+    <ul>
+        <li>Respect content policies. The removal of watermarks may have legal or ethical implications depending on how you use the resulting images.</li>
+        <li>This tool removes visible watermarks only. It does not affect any invisible/steganographic watermarks that may be embedded in the image data. <a href="https://support.google.com/gemini/answer/16722517">Learn more about SynthID</a></li>
+    </ul>
+    <p><b>Privacy Policy</b><br/>This service provides browser-based image processing. All processing is done locally on your device. We do not upload your images to any remote servers.</p>
+    <p><b>Limitation of Liability</b><br/>The tool is provided "as is". The developer shall not be liable for any data loss, image corruption, or legal disputes arising from the use of this tool.</p>
+    ]]>
+</string>
+    <string name="step2">Auto Processing</string>
+    <string name="step3">Save Clean Image</string>
+    <string name="privacy_title">Privacy First</string>
+    <string name="privacy_desc">Pure frontend processing, images never leave your device</string>
+    <string name="pricing_title">Completely Free</string>
+    <string name="pricing_desc">No usage limits, no hidden fees, ready to use</string>
+</resources>

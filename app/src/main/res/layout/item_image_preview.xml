@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/imageIndex"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_step_number"
+        android:gravity="center"
+        android:text="@string/_1"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/originalImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12dp"
+        android:background="@color/border_light"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/imageIndex"
+        app:layout_constraintTop_toTopOf="@id/imageIndex"
+        app:layout_constraintBottom_toBottomOf="@id/imageIndex" />
+
+    <ImageView
+        android:id="@+id/processedImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/border_light"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/originalImage"
+        app:layout_constraintTop_toTopOf="@id/originalImage"
+        app:layout_constraintBottom_toBottomOf="@id/originalImage" />
+
+    <!-- Status text -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary_light"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Processing..."
+        app:layout_constraintStart_toEndOf="@id/processedImage"
+        app:layout_constraintTop_toTopOf="@id/processedImage"
+        app:layout_constraintBottom_toBottomOf="@id/processedImage"
+        app:layout_constraintEnd_toStartOf="@id/downloadSingle"
+        app:layout_constraintHorizontal_bias="0" />
+
+    <!-- Download button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/downloadSingle"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/download"
+        app:icon="@drawable/ic_download"
+        app:iconGravity="textStart"
+        app:cornerRadius="12dp"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/processedImage"
+        app:layout_constraintBottom_toBottomOf="@id/processedImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
