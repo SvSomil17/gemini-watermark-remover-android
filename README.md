@@ -12,6 +12,39 @@ This app is built entirely with Kotlin and Android native components, leveraging
 - High-performance algorithm ensures minimal lag on mid-range devices
 - Export processed images in PNG format
 
+## Gemini Watermark Removal Examples
+
+<details open>
+<summary>Click to Expand/Collapse Examples</summary>
+　
+<p>lossless diff example</p>
+<p><img src="docs/lossless_diff.webp"></p>
+
+
+<p>example images</p>
+
+| Original Image | Watermark Removed |
+| :---: | :----: |
+| <img src="docs/1.png" width="400"> | <img src="docs/unwatermarked_1.png" width="400"> |
+| <img src="docs/2.png" width="400"> | <img src="docs/unwatermarked_2.png" width="400"> |
+| <img src="docs/3.png" width="400"> | <img src="docs/unwatermarked_3.png" width="400"> |
+| <img src="docs/4.png" width="400"> | <img src="docs/unwatermarked_4.png" width="400"> |
+| <img src="docs/5.png" width="400"> | <img src="docs/unwatermarked_5.png" width="400"> |
+
+</details>
+
+## ⚠️ Disclaimer
+
+> [!WARNING]
+>  **USE AT YOUR OWN RISK**
+>
+> This tool modifies image files. While it is designed to work reliably, unexpected results may occur due to:
+> - Variations in Gemini's watermark implementation
+> - Corrupted or unusual image formats
+> - Edge cases not covered by testing
+>
+> The author assumes no responsibility for any data loss, image corruption, or unintended modifications. By using this tool, you acknowledge that you understand these risks.
+
 ## How It Works
 
 1. Select an image or multiple images.
@@ -26,6 +59,31 @@ This app is built entirely with Kotlin and Android native components, leveraging
 - Native image processing
 - Reverse Alpha Blending algorithm
 
+## Limitations
+
+- Only removes **Gemini visible watermarks** <small>(the semi-transparent logo in bottom-right)</small>
+- Does not remove invisible/steganographic watermarks. <small>[(Learn more about SynthID)](https://support.google.com/gemini/answer/16722517)</small>
+- Designed for Gemini's current watermark pattern <small>(as of 2025)</small>
+
+## Legal Disclaimer
+
+This tool is provided for **personal and educational use only**. 
+
+The removal of watermarks may have legal implications depending on your jurisdiction and the intended use of the images. Users are solely responsible for ensuring their use of this tool complies with applicable laws, terms of service, and intellectual property rights.
+
+The author does not condone or encourage the misuse of this tool for copyright infringement, misrepresentation, or any other unlawful purposes.
+
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THIS SOFTWARE.**
+
+## Credits
+
+This project is an Android port of the [Gemini Watermark Tool](https://github.com/allenk/GeminiWatermarkTool) by Allen Kuo ([@allenk](https://github.com/allenk)).
+
+UI design and workflow inspiration were adapted from [GargantuaX Gemini Watermark Remover](https://github.com/GargantuaX/gemini-watermark-remover).
+
+The Reverse Alpha Blending method and calibrated watermark masks are based on the original work © 2024 AllenK (Kwyshell), licensed under MIT License.
+
+
 ## License
 
-MIT License – Feel free to use and modify!
+[MIT License](./LICENSE)
