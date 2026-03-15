@@ -10,15 +10,8 @@ device.
 > **🚀 Want to try the Android app? Download it now from the Releases page.**
 
 <p align="center">
-
-<a href="https://github.com/R7ia4917/GeminiWatermarkRemover/releases/download/v1.0/GeminiWatermarkRemover-v1.0.apk">
-<img src="https://img.shields.io/badge/📱_Download_APK-GitHub_Releases-blue?style=for-the-badge" alt="Download APK">
-</a>
-
-<a href="https://github.com/R7ia4917/GeminiWatermarkRemover/releases/latest">
-<img src="https://img.shields.io/badge/⚡_Latest_Version-Install_Now-green?style=for-the-badge" alt="Latest Release">
-</a>
-
+  <a href="https://github.com/R7ia4917/gemini-watermark-remover-android/releases/download/v1.0/GeminiWatermarkRemover-v1.0.apk"><img src="https://img.shields.io/badge/📱_Download_APK-GitHub_Releases-blue?style=for-the-badge" alt="Download APK"></a>&nbsp;
+  <a href="https://github.com/R7ia4917/gemini-watermark-remover-android/releases/latest"><img src="https://img.shields.io/badge/⚡_Latest_Version-Install_Now-green?style=for-the-badge" alt="Latest Release"></a>&nbsp;
 </p>
 
 ## Features
