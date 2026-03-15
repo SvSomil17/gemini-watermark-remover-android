@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
     /** Launcher for saving images using CREATE_DOCUMENT */
     private val saveImageLauncher = registerForActivityResult(
-        ActivityResultContracts.CreateDocument("image/png")
+        ActivityResultContracts.CreateDocument("image/jpeg")
     ) { uri ->
         uri?.let {
             pendingBitmap?.let { bitmap ->
