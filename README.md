@@ -7,6 +7,20 @@ precise Reverse Alpha Blending algorithm** rather than unpredictable AI inpainti
 AI-based tools, it guarantees **consistent, fast, and reliable watermark removal** directly on the
 device.
 
+> **🚀 Want to try the Android app? Download it now from the Releases page.**
+
+<p align="center">
+
+<a href="https://github.com/R7ia4917/GeminiWatermarkRemover/releases/download/v1.0/GeminiWatermarkRemover-v1.0.apk">
+<img src="https://img.shields.io/badge/📱_Download_APK-GitHub_Releases-blue?style=for-the-badge" alt="Download APK">
+</a>
+
+<a href="https://github.com/R7ia4917/GeminiWatermarkRemover/releases/latest">
+<img src="https://img.shields.io/badge/⚡_Latest_Version-Install_Now-green?style=for-the-badge" alt="Latest Release">
+</a>
+
+</p>
+
 ## Features
 
 - Remove watermarks from images without sending them to a server
@@ -18,7 +32,8 @@ device.
 ## Gemini Watermark Removal Examples
 
 > Demo images in the `docs` folder are
-> from [GargantuaX/gemini-watermark-remover](https://github.com/GargantuaX/gemini-watermark-remover),
+>
+from [GargantuaX/gemini-watermark-remover](https://github.com/GargantuaX/gemini-watermark-remover),
 > used under MIT License, with full credit to the original author.  
 > The UI workflow is adapted from the JavaScript version for Android.
 
