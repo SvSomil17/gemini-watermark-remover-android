@@ -206,7 +206,7 @@ class MainActivity : AppCompatActivity() {
             val nameIndex = it.getColumnIndex(OpenableColumns.DISPLAY_NAME)
             if (it.moveToFirst()) return it.getString(nameIndex)
         }
-        return "image.png"
+        return "image.jpeg"
     }
 
     /** Generate "_unwatermarked" filename */
@@ -218,7 +218,7 @@ class MainActivity : AppCompatActivity() {
             val extension = originalName.substring(dotIndex)
             "${name}_unwatermarked${extension}"
         } else {
-            "${originalName}_unwatermarked.png"
+            "${originalName}_unwatermarked.jpeg"
         }
     }
 
@@ -244,7 +244,7 @@ class MainActivity : AppCompatActivity() {
     private fun saveBitmapToUri(bitmap: Bitmap, uri: Uri) {
         try {
             contentResolver.openOutputStream(uri)?.use { out ->
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)
+                bitmap.compress(Bitmap.CompressFormat.jpeg, 100, out)
                 out.flush()
                 showToast("Image saved: ${uri.lastPathSegment}")
             }
